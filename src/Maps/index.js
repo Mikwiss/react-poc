@@ -1,3 +1,3 @@
-import Maps from './component/Maps';
+import MapsContainer from './component/MapsContainer';
 
-export default Maps;
+export default MapsContainer;

@@ -1,18 +1,22 @@
 import React, { Component } from 'react';
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
 import Header from './Header';
-import Maps from "./Maps";
+import MapsContainer from "./Maps";
 
 class App extends Component {
   render() {
     return (
       <div class="App">
         <Header></Header>
-        <Maps googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
-              loadingElement={<div style={{ height: `100%` }} />}
-              containerElement={<div style={{ height: `400px` }} />}
-              mapElement={<div style={{ height: `100%` }} />}/>
-        
+
+        <Switch>
+          {/* <Route exact path="/" component={Home}/> */}
+          {/* both /roster and /roster/:number begin with /roster */}
+          <Route path="/maps" component={ MapsContainer }/>
+          {/* <Route path="/schedule" component={Schedule}/> */}
+        </Switch>
+
       </div>
     );
   }

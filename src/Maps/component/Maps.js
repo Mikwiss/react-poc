@@ -10,7 +10,7 @@ class Maps extends Component {
         { this.props.name }
         {/* <withScriptjs>
           <withGoogleMap> */}
-            <GoogleMap  googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places" defaultZoom={8} defaultCenter={{ lat: -34.397, lng: 150.644 }}/>
+            <GoogleMap  defaultZoom={8} defaultCenter={{ lat: -34.397, lng: 150.644 }}/>
           {/* </withGoogleMap>
         </withScriptjs> */}
       </div>
